@@ -1,0 +1,19 @@
+name: ${project.name}
+version: ${project.version}
+author: totemo
+authors: [totemo]
+description: ${project.description}
+website: ${project.url}
+main: io.totemo.happyeaster.HappyEaster
+
+permissions:
+  happyeaster.admin:
+    description: Permission to administer the plugin.
+    default: op
+
+commands:
+  happyeaster:
+    description: ${project.name} administrative command.
+    permission: happyeaster.admin
+    usage: |
+      /<command> reload: Reload the configuration.

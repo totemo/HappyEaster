@@ -1,0 +1,204 @@
+debug:
+  despawn: false
+  natural_spawn: false
+
+less_particles: true
+
+world:
+  name: world
+
+killer_rabbit:
+  health: 40.0
+  chance: 0.2
+  effects:
+    strength:
+      ==: PotionEffect
+      effect: 5
+      duration: 2147483647
+      amplifier: 1
+      ambient: true
+      has-particles: true
+    speed:
+      ==: PotionEffect
+      effect: 1
+      duration: 2147483647
+      amplifier: 2
+      ambient: true
+      has-particles: true
+#    jump:
+#      ==: PotionEffect
+#      effect: 8
+#      duration: 2147483647
+#      amplifier: 1
+#      ambient: true
+#      has-particles: true
+
+
+drops:
+  head:
+    chance: 0.1
+
+  regular:
+    egg:
+      chance: 0.3
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: EGG
+        amount: 1
+    choccies:
+      chance: 0.2
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: INK_SACK
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: "§6Choccies"
+    poop:
+      chance: 0.025
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: INK_SACK
+        damage: 3
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: "§6Bunny Poops"
+    leaping:
+      chance: 0.01
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8235
+    foot:
+      chance: 0.05
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: RABBIT_FOOT
+
+  special:
+    slime_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 55
+    silverfish_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 60
+    bat_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 65
+    endermite_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 67
+    pig_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 90
+    sheep_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 91
+    cow_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 92
+    chicken_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 93
+    squid_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 94
+    wolf_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 95
+    mooshroom_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 96
+    ocelot_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 98
+    horse_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 100
+    rabbit_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 101
+    villager_egg:
+      chance: 0.20
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: MONSTER_EGG
+        damage: 120
+
+holy_hand_grenade:
+  type: EGG
+  name: "&6Holy Hand Grenade of Antioch"
+  enchants:
+    flame:
+      type: THORNS
+      level: 1
+  damage: 50.0
+  radius: 6.0
+
+  lore:
+  - First shalt thou take out the Holy Pin.
+  - Then, shalt thou count to three, no more, no less.
+  - Three shalt be the number thou shalt count,
+  - and the number of the counting shalt be three.
+  - Four shalt thou not count, neither count thou two,
+  - excepting that thou then proceed to three.
+  - Five is right out.
+  - Once the number three, being the third number,
+  - be reached, then lobbest thou thy Holy Hand Grenade
+  - of Antioch towards thy foe, who, being naughty in
+  - my sight, shall snuff it.
+
+  recipe:
+    ingredients:
+      e: EGG
+      s: SULPHUR
+      n: GOLD_NUGGET
+    shape:
+    - "sns"
+    - "nen"
+    - "sns"
+
