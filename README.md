@@ -1,6 +1,6 @@
 HappyEaster
 ===========
-An Easter themed plugin featuring spawn egg drops, *The Killer Rabbit of Caerbannog*,
+An Easter themed Bukkit plugin featuring spawn egg drops, *The Killer Rabbit of Caerbannog*,
 and a craftable *Holy Hand Grenade of Antioch*.
 
 Zombies, skeletons, wither skeletons and creepers killed by grenades have a
@@ -27,7 +27,7 @@ including the health of killer rabbits, the drops by mobs, the damage done by
 the Holy Hand Grenade, and its crafting recipe.
 
 Most aspects of the configuration are deemed to be self-explanatory, when read
-in conjunction with the comments in Configuration.java. However, a couple of
+in conjunction with the comments in [Configuration.java](https://github.com/totemo/HappyEaster/blob/master/src/io/totemo/happyeaster/Configuration.java). However, a couple of
 points are worthy of note:
 
  * `killer_rabbit.chance` is the probability, in the range [0.0, 1.0], that a
