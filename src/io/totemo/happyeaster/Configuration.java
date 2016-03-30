@@ -61,9 +61,10 @@ public class Configuration {
     /**
      * Name of the Holy Hand Grenade with colour codes translated.
      *
-     * A string comparison against this name is used to differentiated between
-     * an egg throw and a grenade throw. It is assumed impossible for a player
-     * to set a non-default colour in the name.
+     * A string comparison against this name is used to differentiate between an
+     * egg throw and a grenade throw. It is assumed impossible for a player to
+     * set a non-default colour in the name, so a colourful name indicates a
+     * real grenade rather than a named egg.
      */
     public String GRENADE_NAME;
 
@@ -88,7 +89,8 @@ public class Configuration {
     public ArrayList<Drop> DROPS_REGULAR;
 
     /**
-     * Special drops.
+     * Special drops, which drop when a player has damaged the mob in the last 5
+     * seconds.
      */
     public ArrayList<Drop> DROPS_SPECIAL;
 

@@ -55,8 +55,17 @@ import com.darkblade12.particleeffect.ParticleEffect;
  * <li>The plugin affects a single configured world (by default, the overworld)
  * only.</li>
  * <li>A configurable fraction of hostile mobs in the configured world are
- * replaced by killer rabbits. Spawner mobs are not modified.</li>
- * <li></li>
+ * replaced by killer rabbits named The Killer Rabbit of Caerbannog. Spawner
+ * mobs are not modified.</li>
+ * <li>The Holy Hand Grenade of Antioch is craftable with a configurable recipe.
+ * It explodes with particle effects and enough damage to kill the killer
+ * rabbit.</li>
+ * <li>Creepers, skeletons, wither skeletons and zombies have a chance of
+ * dropping their skulls if killed by a grenade.</li>
+ * <li>Hand grenades thrown into water blow fish into the air.</li>
+ * <li>Mobs hurt by players in the 5 seconds immediately preceding their death
+ * have a chance of dropping spawn eggs and other "special" drops from the
+ * configuration. If not hurt recently, they drop more mundane drops.</li>
  * </ul>
  */
 public class HappyEaster extends JavaPlugin implements Listener {
@@ -572,14 +581,13 @@ public class HappyEaster extends JavaPlugin implements Listener {
     }
 
     // ------------------------------------------------------------------------
-
     /**
      * Plugin name; used to generate unique String keys.
      */
     protected static final String PLUGIN_NAME = "HappyEaster";
 
     /**
-     * Metadata used to tag natural spawned mobs.
+     * Metadata used to tag naturally spawned mobs.
      */
     protected static final String NATURAL_KEY = PLUGIN_NAME + "_NaturalSpawn";
 

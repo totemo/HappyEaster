@@ -23,8 +23,6 @@ public class RabbitDespawnTask implements Runnable {
      * 1% of a tick), per call to run().
      *
      * @see java.lang.Runnable#run()
-     *
-     *
      */
     @Override
     public void run() {
@@ -72,7 +70,7 @@ public class RabbitDespawnTask implements Runnable {
     protected Chunk[] _loadedChunks;
 
     /**
-     * Index of the next entity to consider.
+     * Index of the next chunk to consider.
      */
     protected int _nextChunk;
 } // class RabbitDespawnTask

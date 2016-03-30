@@ -68,4 +68,4 @@ public class CustomEntityFirework extends EntityFireworks {
             e.printStackTrace();
         }
     }
-}// class CustomEntityFirework
+} // class CustomEntityFirework
